@@ -1,0 +1,515 @@
+/* All Elements */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #f1f0e7;
+    font-family: "Raleway", sans-serif;
+}
+
+h2, h3 {
+    font-family: "Cormorant Garamond", serif;
+    text-decoration: underline;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    height: 62px;
+    background-color: #242c34;
+    border-bottom: 1px solid #d2a763;
+}
+
+.navlist {  
+    height: 45px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #d2a763;
+}
+
+.navlist li {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 17px 12px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: #f1f0e7;
+    transition: all 300ms ease;
+}
+
+.navbar img {
+    width: 4.25%;
+    min-width: 64px;
+    padding: 10px;
+}
+
+.navlist a:hover {
+    color: #d2a763;
+}
+
+/* Main/Hero Section */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 450px;
+    margin-top: 45px;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title-cont {
+    width: 75%;
+    text-align: center;
+}
+
+.title-cont h1 {
+    margin-top: 10px;
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: #d2a763;
+}
+
+.title-cont img {
+    width: 25%;
+}
+
+.title-content {
+    background-color: #242c34;
+    opacity: 0.9;
+    padding: 15px;
+}
+
+/* Mission Statement Section */
+
+.mission-cont {
+    border: 1px solid black;
+    width: 75%;
+    margin: 150px auto;
+    padding: 25px;
+}
+
+.mission-cont h2 {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.mission-cont p {
+    border-left: 3px solid black;
+    padding-left: 25px;
+    letter-spacing: .5px;
+    line-height: 30px;
+    font-size: 1.25rem;
+}
+
+/* Products/Services Section */
+
+.services-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px auto;
+}
+
+.services-title {
+    padding: 15px 17px;
+    margin: 0px auto 25px auto;
+    text-transform: uppercase;
+    font-size: 3rem;
+    background-color: #242c34;
+    color: #d2a763;
+}
+
+.list-cont {
+    width: 100%;
+    margin-top: 25px;
+    background-color: #242c34;
+}
+
+.services-list ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.services-list li {
+    margin: 25px auto 0px auto;
+    padding: 15px;
+}
+
+figure a{
+    text-decoration: none;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px black;
+}
+
+figcaption {
+    position: relative;
+    bottom: 75px;
+    width: 100%;
+    padding: 6px;
+    background-color: #d2a763;
+    border-top: 1px solid #d2a763;
+    border-bottom: 1px solid #d2a763;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+    color: #f1f0e7;
+}
+
+/* Team Member Section */
+
+.team-cont {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-title {
+    margin: 0px auto 25px auto;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    background-color: #242c34;
+    color: #d2a763;
+}
+
+.member-cont {
+    width: 75%;
+    background-color: #242c34;
+    margin: 25px 0px;
+}
+
+.member-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.member-header h2 {
+    margin: 25px 0px 25px 45px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #d2a763;
+    text-decoration: underline;
+}
+
+.member-header a {
+    margin: 25px 45px 25px 0px;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+
+.member-content {
+    display: flex;
+    justify-content: center;
+}
+
+.member-list {
+    min-width: 454px;
+    width: 40%;
+    border: 1px solid black;
+    background-color: #f1f0e7;
+    margin-bottom: 28px;
+    padding: 0px 15px;
+}
+
+.member-list h3 {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.member-list li {
+    border-top: 1px solid black;
+    border-width: thin;
+    list-style: none;
+    padding: 15px;
+    line-height: 20px;
+    letter-spacing: .5px;
+}
+
+.img-cont {
+    width: 50%;
+    height: auto;
+    margin: 0px 25px 25px 0px;
+}
+
+.img-cont img {
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px black;
+}
+
+/* Footer Section */
+
+footer {
+    width: 100%;
+    height: 62px;
+    background-color: #242c34;
+    border-top: 1px solid #d2a763;
+}
+
+footer a {
+    color: #f1f0e7;
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+
+footer a:hover {
+    color: #d2a763;
+}
+
+.footer-cont ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-cont li {
+    list-style: none;
+    color: white;
+    padding: 21px 12px;
+}
+
+/* Button Section */
+
+.button-primary {
+    border: 1px solid #d2a763;
+    background-color: #d2a763;
+    color: #f1f0e7;
+    transition: all 200ms ease;
+}
+
+.button-primary:hover {
+    border: 1px solid #d2a763;
+    color: #d2a763;
+    background-color: inherit;
+}
+
+.button-primary:active {
+    border: 1px solid #d2a763;
+    color: #d2a763;
+    background-color: inherit;
+}
+
+.button-secondary figcaption{
+    transition: all 300ms ease;
+}
+
+.button-secondary figcaption:hover {
+    border-top: 1px solid #d2a763;
+    border-bottom: 1px solid #d2a763;
+    background-color: #242c34;
+    color: #d2a763;
+}
+
+/* Media Query Section */
+
+/* Mobile Devices - Portrait */
+@media only screen and (min-width: 300px) and (max-width: 980px) and (orientation: portrait)
+{
+    .title-cont {
+        width: 75%;
+    }
+    
+    .navbar li {
+        font-size: 1rem;
+    }
+    
+    .title-cont h1 {
+        font-size: 2.5rem;
+    }
+    
+    .services-list ul {
+    flex-direction: column;
+    }
+    
+    .mission-cont {
+        width: 75%;
+    }
+    
+    .mission-cont h2 {
+        font-size: 2rem;
+    }
+    
+    .mission-cont p {
+        font-size: 1rem;
+        line-height: 30px;
+    }
+    
+    .member-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .member-header {
+        flex-direction: column;
+    }
+    
+    .member-header h2 {
+        margin: 10px auto;
+    }
+    
+    .member-header a {
+        width: 50%;
+        text-align: center;
+        margin: 10px auto;
+        padding: 5px;
+    }
+    
+    .img-cont {
+        min-width: 275px;
+        margin: 20px auto;
+    }
+    
+    .member-list {
+        min-width: 200px;
+        width: 75%;
+    } 
+    
+    .member-list h3 {
+        font-size: 2.5rem;
+    }
+    
+    .member-list li {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+}
+
+/* Mobile Devices - Landscape */
+@media only screen and (min-width: 300px) and (max-width: 980px) and (orientation: landscape)
+{
+    .title-cont {
+        width: 75%;
+    }
+    
+    .mission-cont {
+        width: 75%;
+    }
+    
+    .mission-cont p {
+        font-size: 1.25rem;
+        line-height: 35px;
+    }
+    
+    .member-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .member-list {
+        width: 75%;
+    }
+    
+    .member-list h3 {
+        font-size: 2rem;
+    }
+
+    .member-list li {
+        font-size: 1.25rem;
+        line-height: 28px;
+    }
+}
+
+/* Tablet Devices - Portrait */
+@media only screen and (min-width: 900px ) and (max-width: 1200px) and (orientation: portrait)
+{
+    .title-cont {
+        width: 75%;
+    }
+    
+    .mission-cont {
+        width: 75%;
+    }
+    
+    .mission-cont p {
+        font-size: 1.25rem;
+        line-height: 30px;
+    }
+    
+    .member-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .member-list {
+        width: 75%;
+    }
+    
+    .member-list h3 {
+        font-size: 2rem;
+    }
+
+    .member-list li {
+        font-size: 1.25rem;
+        line-height: 28px;
+    }
+}
+
+
+/* Tablet Devices - Landscape */
+@media only screen and (min-width: 900px ) and (max-width: 1200px) and (orientation: landscape)
+{
+    .title-cont {
+        width: 75%;
+    }
+    
+    .mission-cont {
+        width: 75%;
+    }
+    
+    .mission-cont p {
+        font-size: 1.25rem;
+        line-height: 30px;
+    }
+    
+    .member-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .member-list {
+        width: 75%;
+    }
+    
+    .member-list h3 {
+        font-size: 2rem;
+    }
+
+    .member-list li {
+        font-size: 1.25rem;
+        line-height: 28px;
+    }
+}
+    
+    
